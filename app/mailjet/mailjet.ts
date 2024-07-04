@@ -11,7 +11,7 @@ export async function sendEmail({ subject, message }: { subject: string; message
       Messages: [
         {
           From: {
-            Email: "nasturel@lucasain.dev",
+            Email: "rezervare@nasturel.com",
             Name: 'Lucas Ainenco',
           },
           To: [

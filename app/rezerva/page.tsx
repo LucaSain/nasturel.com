@@ -104,7 +104,7 @@ export default function Rezerva() {
           } catch (e) {
             console.error(e);
           }
-          redirect("/");
+          redirect("/confirm");
         }}
         className="w-4/5 sm:w-1/3 flex flex-col items-center space-y-4 z-30"
       >

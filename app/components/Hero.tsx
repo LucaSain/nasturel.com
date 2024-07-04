@@ -20,7 +20,7 @@ export default function Hero() {
             Hai la cel mai tare festival pentru copiii din Romania!
           </p>
           <Link href="/rezerva" className="btn btn-primary">
-            Rezerva un bilet gratuit
+            Rezerva-ti gratuit biletul!
           </Link>
         </div>
       </div>
