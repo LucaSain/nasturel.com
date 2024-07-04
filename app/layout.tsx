@@ -21,8 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="text-base-content bg-base-100">
           <Nav />
-          <div>{children}</div>
-          <Footer />
+          <div className="pb-10">{children}</div>
         </div>
       </body>
     </html>
