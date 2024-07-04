@@ -4,7 +4,7 @@ import Background from "./components/background";
 import Carousel from "./components/Carousel";
 export default function Home() {
   return (
-    <div className="z-0">
+    <div className="z-0 overflow-hidden">
       <Background />
       <Hero />
       <div className="h-[30vh] sm:h-screen w-screen relative -mt-28 flex flex-row justify-center items-center p-3">
