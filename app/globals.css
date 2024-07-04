@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-padding-top:4rem;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +34,15 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.cls-1 {
+  transform: scale(0.9);
+  fill: #a5d8ff;
+  stroke: #1971c2;
+  stroke-width: 10px;
+  stroke-linejoin: round;
+}
+
+svg{
+  overflow: visible;
 }
