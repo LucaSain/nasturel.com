@@ -19,7 +19,9 @@ export default function Hero() {
           <p className="py-6 text-center">
             Hai la cel mai tare festival pentru copiii din Romania!
           </p>
-          <button className="btn btn-primary">Rezerva un bilet gratuit</button>
+          <Link href="/rezerva" className="btn btn-primary">
+            Rezerva un bilet gratuit
+          </Link>
         </div>
       </div>
     </div>
