@@ -20,6 +20,7 @@ export default function Rezerva() {
   ];
   const formElements = [
     <input
+      key="nume"
       name="nume"
       required
       type="text"
@@ -27,6 +28,7 @@ export default function Rezerva() {
       className="input w-full input-primary"
     />,
     <input
+      key="prenume"
       name="prenume"
       required
       type="text"
@@ -34,6 +36,7 @@ export default function Rezerva() {
       className="input w-full input-primary"
     />,
     <input
+      key="telefon"
       name="telefon"
       required
       type="text"
@@ -41,13 +44,14 @@ export default function Rezerva() {
       className="input w-full input-primary"
     />,
     <input
+      key="email"
       name="email"
       required
       type="email"
       placeholder="Adresa de mail"
       className="input w-full input-primary"
     />,
-    <div className=" flex flex-col sm:flex-row gap-4">
+    <div key="nr" className=" flex flex-col sm:flex-row gap-4">
       <input
         name="numar_copii"
         required
