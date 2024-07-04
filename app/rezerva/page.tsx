@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { sendEmail } from "../mailjet/mailjet";
+import Background from "../components/background";
 export default function Rezerva() {
   //Nume preune telefon adresa mail numar de copii numar de adulti
   interface names {
@@ -69,10 +70,15 @@ export default function Rezerva() {
     </div>,
   ];
   return (
-    <div className="h-screen w-screen flex items-center flex-col pt-24 justify-start sm:justify-around">
-      <div className="mb-10 sm:-mb-20 text-center">
-        <h1 className="text-3xl sm:text-5xl font-bold ">Rezerva acum!</h1>
-        <h2 className=" mt-4">Completeaza formularul de mai jos:</h2>
+    <div className="h-screen w-screen flex items-center flex-col justify-center sm:justify-around">
+      <Background />
+      <div className="mb-10 sm:-mb-20 text-center z-30 bg-base-100  bg-opacity-50 rounded-lg p-5">
+        <h1 className="text-3xl sm:text-5xl font-bold text-white sm:text-base-content">
+          Rezerva acum!
+        </h1>
+        <h2 className="text-white sm:text-base-content mt-4">
+          Completeaza formularul de mai jos:
+        </h2>
       </div>
       <form
         action={async (formData: FormData) => {
@@ -100,7 +106,7 @@ export default function Rezerva() {
           }
           redirect("/");
         }}
-        className="w-4/5 sm:w-1/3 flex flex-col items-center space-y-4"
+        className="w-4/5 sm:w-1/3 flex flex-col items-center space-y-4 z-30"
       >
         {formElements.map((formelement) => {
           return (
