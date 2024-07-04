@@ -11,12 +11,12 @@ export async function sendEmail({ subject, message }: { subject: string; message
       Messages: [
         {
           From: {
-            Email: "lucasainenco2@gmail.com",
-            Name: 'Rezervare',
+            Email: "nasturel@lucasain.dev",
+            Name: 'Lucas Ainenco',
           },
           To: [
             {
-              Email: "lucasainenco2@gmail.com",
+              Email: "sainencoa@gmail.com",
               Name: 'Rezervare',
             },
           ],
