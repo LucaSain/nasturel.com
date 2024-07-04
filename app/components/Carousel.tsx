@@ -12,9 +12,7 @@ export default function Carousel() {
 
   //build a carousel with react
   const carouselItems = [
-    ...Array.from({ length: 15 }).map(
-      (_, i) => "/Carousel" + (i + 1) + ".jpeg"
-    ),
+    ...Array.from({ length: 7 }).map((_, i) => "/Carousel" + (i + 1) + ".jpeg"),
     ...Array.from({ length: 7 }).map((_, i) => "/Carousel" + (i + 1) + ".mp4"),
   ];
   const [currentItem, setCurrentItem] = useState<number>(1);
@@ -40,7 +38,7 @@ export default function Carousel() {
                 />
               ) : (
                 <video
-                  className="shadow-xl w-60 h-60 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-xl object-cover"
+                  className=" relative shadow-xl w-60 h-60 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-xl object-cover z-[999] "
                   muted
                   controls
                   autoPlay
