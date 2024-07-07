@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
       </div>
       <div className="relative h-max w-screen bg-base-100 mb-36">
-        <div className="absolute z-10 w-64 hidden lg:block right-10 bottom-1/2 sm:right-3 sm:top-48 rotate-180">
+        <div className="absolute z-10 w-64 hidden lg:block right-10 bottom-1/2 sm:right-3 sm:top-48">
           <Clouds.Cloud2 />
         </div>
         <div className="absolute opacity-20 z-10 w-96 left-1/4 bottom-20">
@@ -23,7 +23,7 @@ export default function Home() {
           src="baloon2.svg"
           className="absolute z-10 w-64  bottom-32 left-2 opacity-20 xl:opacity-100 sm:left-20 hover:animate-spin"
         />
-        <div className="relative prose  prose-sm sm:prose-lg mx-4 sm:mx-auto z-[99] rounded-xl p-10">
+        <div className="relative prose prose-sm sm:prose-lg mx-4 sm:mx-auto z-[99] rounded-xl p-10">
           {text}
         </div>
       </div>

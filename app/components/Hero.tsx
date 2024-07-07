@@ -17,7 +17,10 @@ export default function Hero() {
             Festivalul Nǎsturel
           </h1>
           <p className="py-6 text-center">
-            Hai la cel mai tare festival pentru copiii din Romania!
+            Pregătim cel mai tare festival pentru copii din Romania!
+            <br />
+            Rezerva-ti un loc gratuit acum si te vom anunța data exactă cat de
+            curând!
           </p>
           <Link href="/rezerva" className="btn btn-primary">
             Rezerva-ti gratuit biletul!

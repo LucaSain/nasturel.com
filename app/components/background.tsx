@@ -1,15 +1,15 @@
 import * as Clouds from "./Cloud";
 export default function Background() {
   return (
-    <div className="w-screen  h-screen absolute left-0 right-0 z-0">
-      <div className="absolute right-0 top-0 z-10 h-full w-full opacity-20">
+    <div className="w-screen h-screen absolute left-0 top-0 z-0">
+      {/* <div className="absolute right-0 top-0 z-10 h-full w-full opacity-20">
         <img src="sunrays.svg" className="h-full w-full object-cover" />
-      </div>
-      <div className="absolute right-0 top-0 z-10 h-full w-full  bg-gradient-to-b from-transparent to-base-100"></div>
+      </div> */}
+      {/* <div className="absolute right-0 top-0 z-10 h-full w-full  bg-gradient-to-b from-transparent to-base-100"></div>
       <img
         src="suni.svg"
         className="absolute z-10 w-48 sm:w-64 right-0 top-0"
-      />
+      /> */}
       <div className="absolute z-10 w-96 hidden sm:block right-1/3 top-1/2 opacity-20 brightness-75">
         <Clouds.Cloud1 />
       </div>
