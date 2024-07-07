@@ -1,7 +1,9 @@
-import { redirect } from "next/navigation";
-import { sendEmail } from "../mailjet/mailjet";
+"use client";
+import submit from "../actions";
 import Background from "../components/background";
+import { useState } from "react";
 export default function Rezerva() {
+  const [loading, setLoading] = useState(false);
   //Nume preune telefon adresa mail numar de copii numar de adulti
   interface names {
     nume: string;
@@ -81,33 +83,18 @@ export default function Rezerva() {
         </h2>
       </div>
       <form
-        action={async (formData: FormData) => {
-          "use server";
-          let data: names = {
-            nume: "",
-            prenume: "",
-            telefon: "",
-            email: "",
-            numar_copii: "",
-            numar_adulti: "",
-          };
-          //create object with keys
-          for (let name of names) {
-            data[name as keyof names] = formData.get(name) as string;
-          }
-          console.log(data);
-          try {
-            await sendEmail({
-              subject: "rezervare",
-              message: JSON.stringify(data),
-            });
-          } catch (e) {
-            console.error(e);
-          }
-          redirect("/confirm");
+        onSubmit={() => {
+          setLoading(true);
         }}
-        className="w-4/5 sm:w-1/3 flex flex-col items-center space-y-4 z-30"
+        action={submit}
+        className="w-4/5 relative h-max sm:w-1/3 flex flex-col items-center space-y-4 z-30"
       >
+        {loading && (
+          <div className="absolute bg-primary opacity-35 rounded-xl z-[999] h-full w-full flex justify-center">
+            <span className="loading loading-spinner loading-xl text-neutral-content scale-110"></span>
+          </div>
+        )}
+
         {formElements.map((formelement) => {
           return (
             <div className="w-full" key={formElements.indexOf(formelement)}>
