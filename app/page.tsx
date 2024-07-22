@@ -11,6 +11,9 @@ export default function Home() {
       <div className="h-screen w-screen">
         <Background />
         <Hero />
+        <div className=" hidden md:block absolute bottom-10 left-20">
+          <img src="arrow2.png" className="w-20" />
+        </div>
       </div>
       <div className="relative h-max w-screen bg-base-100 mb-36">
         <div className="absolute z-10 w-64 hidden lg:block right-10 bottom-1/2 sm:right-3 sm:top-48">
