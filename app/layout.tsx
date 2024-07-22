@@ -7,7 +7,9 @@ import { Suspense } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: "Festivalul Nasturel",
   description:
     "Cel mai tare festival pentru copii din Romania! In curand la Sibiu!",
