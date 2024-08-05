@@ -17,14 +17,20 @@ export default function Carousel() {
   ];
   const [currentItem, setCurrentItem] = useState<number>(1);
   return (
-    <div className="carousel relative w-full h-96 flex justify-center items-center ">
-      <Suspense fallback={<div>loading</div>}>
+    <div className="carousel relative w-full h-[500px] flex justify-center items-center ">
+      <Suspense
+        fallback={
+          <div className="h-full w-full flex justify-center items-center bg-primary bg-opacity-45 rounded-xl">
+            <div className="  loading-spinner "></div>
+          </div>
+        }
+      >
         {
           //add all the items in the carousel and make them hidden except the current item
           carouselItems.map((item, index) => (
             <div
               key={index}
-              className={`absolute w-full h-max flex justify-center items-center ${
+              className={`absolute max-w-[80%] aspect-square sm:max-w-xl h-full flex justify-center items-center ${
                 index === currentItem ? "block" : "hidden"
               }`}
             >
@@ -34,11 +40,11 @@ export default function Carousel() {
                   height={400}
                   alt={item}
                   src={item}
-                  className=" shadow-xl transition-all w-60 h-60 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-xl object-cover"
+                  className=" shadow-xl transition-all h-full w-full rounded-xl object-cover"
                 />
               ) : (
                 <video
-                  className=" relative shadow-xl w-60 h-60 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-xl object-cover z-[999] "
+                  className="relative shadow-xl h-full w-full rounded-xl object-cover z-[999] "
                   muted
                   controls
                   autoPlay
@@ -50,7 +56,7 @@ export default function Carousel() {
           ))
         }
       </Suspense>
-      <div className="z-[99] absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <div className="z-[9999] absolute left-5 right-5 top-[90%] sm:top-1/2 flex -translate-y-1/2 transform justify-between sm:justify-around">
         <button
           onClick={() => {
             stopAllVideos();

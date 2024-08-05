@@ -11,7 +11,6 @@ export default function CarouseSection() {
       </div>
       <div className="w-full absolute z-40 flex flex-row justify-center items-center">
         <Carousel />
-        <div className="w-full h-full hidden md:block"></div>
       </div>
       <div className="w-full h-full"></div>
       <img src="baloon2.svg" className="relative w-full z-30" />

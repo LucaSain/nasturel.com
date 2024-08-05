@@ -22,7 +22,10 @@ export default function Hero() {
             Rezerva-ti un loc gratuit acum si te vom anunța data exactă cat de
             curând!
           </p>
-          <Link href="/rezerva" className="btn btn-primary">
+          <Link
+            href="/rezerva"
+            className="btn btn-primary hover:-translate-y-1 transition-transform duration-200"
+          >
             Rezerva-ti gratuit biletul!
           </Link>
         </div>

@@ -4,8 +4,27 @@ import Background from "./components/background";
 import Carousel from "./components/Carousel";
 import CarouseSection from "./components/CarouselSection";
 export default function Home() {
-  const text =
-    "La Năsturel, te așteptăm cu mascotele Minnie și Mikey cu costume venite direct din Disneyland, jocuri de grădină, jocuri de apă, tragere cu arcul pentru copii și pentru adulți, ateliere de scrima cu baloane modelabile, ateliere de baloane  de săpun gigantice, cea mai frumoasă pictura pe față făcută de artiștii de la școala de pictura si cele mai faine baloane modelate in ce vrei tu. Hai să-ți faci prieteni cu jocuri de cunoaștere, de tabără și de echipă, hai la atelier de magneți de frigider, de pictat pietre și inimi, de felicitări, de origami și semne de carte, de povești, de ritm și bătut la tobe, hai la ateliere de canto! Vino și ia-ți prima lecție de schi pe iarba, să fii pregătit la iarna! O groaza de spectacole și show-uri, o grămadă de personaje mascate te așteaptă! Vino și tu costumat!";
+  const text = (
+    <>
+      La <b>Năsturel</b>, te așteptăm cu <b>mascotele Minnie și Mikey</b> cu
+      costume venite direct din Disneyland,{" "}
+      <b>jocuri de grădină, jocuri de apă, tragere cu arcul</b>
+      pentru copii și pentru adulți,{" "}
+      <b>ateliere de scrima cu baloane modelabile</b>, ateliere de{" "}
+      <b>baloane de săpun gigantice</b>, cea mai frumoasă <b>pictura pe față</b>
+      făcută de <b>artiștii de la școala de pictura</b> si cele mai faine{" "}
+      <b>baloane modelate</b> in ce vrei tu. Hai să-ți faci prieteni cu{" "}
+      <b>jocuri de cunoaștere, de tabără și de echipă</b>, hai la{" "}
+      <b>
+        atelier de magneți de frigider, de pictat pietre și inimi, de
+        felicitări, de origami și semne de carte, de povești, de ritm și bătut
+        la tobe, hai la ateliere de canto!
+      </b>{" "}
+      Vino și ia-ți prima lecție de <b>schi pe iarba</b>, să fii pregătit la
+      iarna! O groaza de <b>spectacole și show-uri</b>, o grămadă de{" "}
+      <b>personaje mascate</b> te așteaptă! Vino și tu costumat!"
+    </>
+  );
   return (
     <div className="z-0 overflow-hidden">
       <div className="h-screen w-screen">
@@ -26,7 +45,7 @@ export default function Home() {
           src="baloon2.svg"
           className="absolute z-10 w-64  bottom-32 left-2 opacity-20 xl:opacity-100 sm:left-20 hover:animate-spin"
         />
-        <div className="relative prose prose-sm sm:prose-lg mx-4 sm:mx-auto z-[99] rounded-xl p-10">
+        <div className="relative prose prose-sm sm:prose-lg mx-4 sm:mx-auto z-[99] rounded-xl p-10 bg-base-100 bg-opacity-80">
           {text}
         </div>
       </div>
