@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Page() {
   return (
     <div className="prose mx-auto">
@@ -41,6 +43,12 @@ export default function Page() {
         datelor dumneavoastră personale din categoriile menționate mai sus de
         către Nasturel.
       </p>
+      <Link
+        className="btn btn-primary text-primary-content no-underline"
+        href="/rezerva"
+      >
+        Inapoi
+      </Link>
     </div>
   );
 }
