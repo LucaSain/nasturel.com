@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import submit from "../actions";
 import Background from "../components/background";
 import { useState } from "react";
@@ -74,7 +75,7 @@ export default function Rezerva() {
   return (
     <div className="h-screen w-screen flex items-center flex-col justify-center sm:justify-around">
       <Background />
-      <div className="mb-10 sm:-mb-20 text-center z-30 bg-base-100  bg-opacity-50 rounded-lg p-5">
+      <div className="sm:-mb-20 text-center z-30 bg-base-100 bg-opacity-50 rounded-lg p-2 sm:p-5">
         <h1 className="text-3xl sm:text-5xl font-bold text-white sm:text-base-content">
           Rezerva acum!
         </h1>
@@ -87,7 +88,7 @@ export default function Rezerva() {
           setLoading(true);
         }}
         action={submit}
-        className="w-4/5 relative h-max sm:w-1/3 flex flex-col items-center space-y-4 z-30"
+        className="w-4/5 relative h-max sm:w-1/3 flex flex-col items-center space-y-2 sm:space-y-4 z-30"
       >
         {loading && (
           <div className="absolute bg-primary opacity-35 rounded-xl z-[999] h-full w-full flex justify-center">
@@ -102,6 +103,17 @@ export default function Rezerva() {
             </div>
           );
         })}
+        <div className="form-control p-2 border-2 border-primary bg-base-100 rounded-lg w-full">
+          <label className="label cursor-pointer">
+            <span className="label-text">
+              Sunt de acord cu{" "}
+              <Link className="text-primary" href="/privacy">
+                politica de procesare a datelor
+              </Link>
+            </span>
+            <input type="checkbox" required className="checkbox checkbox-" />
+          </label>
+        </div>
         <button type="submit" className="btn btn-primary">
           Rezerva
         </button>
