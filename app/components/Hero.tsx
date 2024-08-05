@@ -18,7 +18,7 @@ export default function Hero() {
           src="/nasturelnotext.png"
           className="hidden sm:block max-w-sm rounded-lg bg-gradient-radial from-base-300 via-transparent to-transparent"
         />
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center gap-2">
           <h1 className="text-4xl hidden sm:block sm:text-5xl font-extrabold">
             Festivalul Nǎsturel
           </h1>
@@ -33,6 +33,12 @@ export default function Hero() {
             className="btn btn-primary hover:-translate-y-1 transition-transform duration-200"
           >
             Rezerva-ti gratuit biletul!
+          </Link>
+          <Link
+            href="https://tabere.nasturel.com/"
+            className="btn btn-accent hover:-translate-y-1 transition-transform duration-200"
+          >
+            Pentru tabara urbana click aici!
           </Link>
         </div>
       </div>
