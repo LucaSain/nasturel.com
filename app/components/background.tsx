@@ -1,12 +1,22 @@
+import Image from "next/image";
 import * as Clouds from "./Cloud";
 export default function Background() {
   return (
     <div className="w-screen h-screen absolute left-0 top-0 z-0">
       <div className="absolute right-0 top-0 z-10 h-full w-full opacity-20">
-        <img src="sunrays.svg" className="h-full w-full object-cover" />
+        <Image
+          alt="sunrays"
+          height={800}
+          width={800}
+          src="sunrays.svg"
+          className="h-full w-full object-cover"
+        />
       </div>
       <div className="absolute right-0 top-0 z-10 h-full w-full  bg-gradient-to-b from-transparent to-base-100"></div>
-      <img
+      <Image
+        alt="sun"
+        height={400}
+        width={400}
         src="suni.svg"
         className="absolute z-10 w-48 sm:w-64 right-0 top-0"
       />
@@ -32,7 +42,10 @@ export default function Background() {
         <Clouds.Cloud7 />
       </div>
 
-      <img
+      <Image
+        alt="baloon"
+        height={400}
+        width={400}
         src="baloon2.svg"
         className="absolute z-10 w-32 bottom-32 right-5 opacity-20 sm:opacity-100 sm:right-20 hover:animate-spin"
       />

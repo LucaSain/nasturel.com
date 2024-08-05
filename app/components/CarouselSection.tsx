@@ -1,5 +1,6 @@
 import * as Clouds from "./Cloud";
 import Carousel from "./Carousel";
+import Image from "next/image";
 
 export default function CarouseSection() {
   return (
@@ -13,7 +14,13 @@ export default function CarouseSection() {
         <Carousel />
       </div>
       <div className="w-full h-full"></div>
-      <img src="baloon2.svg" className="relative w-full z-30" />
+      <Image
+        alt="baloon"
+        height={400}
+        width={400}
+        src="baloon2.svg"
+        className="relative w-full z-30"
+      />
 
       <div className="absolute hidden sm:block transition-all duration-700 z-10 w-96 top-10 left-40 rotate-180">
         <Clouds.Cloud7 />

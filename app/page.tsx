@@ -7,22 +7,22 @@ export default function Home() {
   const text = (
     <>
       La <b>Năsturel</b>, te așteptăm cu <b>mascotele Minnie și Mikey</b> cu
-      costume venite direct din Disneyland,{" "}
+      costume venite direct din Disneyland,
       <b>jocuri de grădină, jocuri de apă, tragere cu arcul</b>
-      pentru copii și pentru adulți,{" "}
-      <b>ateliere de scrima cu baloane modelabile</b>, ateliere de{" "}
+      pentru copii și pentru adulți,
+      <b>ateliere de scrima cu baloane modelabile</b>, ateliere de
       <b>baloane de săpun gigantice</b>, cea mai frumoasă <b>pictura pe față</b>
-      făcută de <b>artiștii de la școala de pictura</b> si cele mai faine{" "}
-      <b>baloane modelate</b> in ce vrei tu. Hai să-ți faci prieteni cu{" "}
-      <b>jocuri de cunoaștere, de tabără și de echipă</b>, hai la{" "}
+      făcută de <b>artiștii de la școala de pictura</b> si cele mai faine
+      <b>baloane modelate</b> in ce vrei tu. Hai să-ți faci prieteni cu
+      <b>jocuri de cunoaștere, de tabără și de echipă</b>, hai la
       <b>
         atelier de magneți de frigider, de pictat pietre și inimi, de
         felicitări, de origami și semne de carte, de povești, de ritm și bătut
         la tobe, hai la ateliere de canto!
-      </b>{" "}
+      </b>
       Vino și ia-ți prima lecție de <b>schi pe iarba</b>, să fii pregătit la
-      iarna! O groaza de <b>spectacole și show-uri</b>, o grămadă de{" "}
-      <b>personaje mascate</b> te așteaptă! Vino și tu costumat!"
+      iarna! O groaza de <b>spectacole și show-uri</b>, o grămadă de
+      <b>personaje mascate</b> te așteaptă! Vino și tu costumat!
     </>
   );
   return (

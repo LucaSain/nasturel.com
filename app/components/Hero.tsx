@@ -1,15 +1,21 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Hero() {
   return (
     <div className="relative hero min-h-screen z-[999]">
       <div className="hero-content flex-col lg:flex-row justify-center items-center">
-        <img
-          src="nasturel.png"
+        <Image
+          height={800}
+          width={800}
+          alt={"nasturel"}
+          src="/nasturel.png"
           className="block sm:hidden w-60 max-w-sm rounded-lg bg-gradient-radial from-base-300 via-transparent to-transparent"
         />
-        <img
-          src="nasturelnotext.png"
+        <Image
+          height={800}
+          width={800}
+          alt={"nasturelnotext"}
+          src="/nasturelnotext.png"
           className="hidden sm:block max-w-sm rounded-lg bg-gradient-radial from-base-300 via-transparent to-transparent"
         />
         <div className="flex flex-col justify-center items-center">
