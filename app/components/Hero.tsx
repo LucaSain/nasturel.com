@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <div className="relative hero min-h-screen z-[999]">
-      <div className="hero-content flex-col lg:flex-row justify-center items-center">
+    <div className="relative hero min-h-screen z-[999] max-w-[100vw] overflow-hidden">
+      <div className="hero-content relative flex-col lg:flex-row justify-center items-center max-w-[100vw] overflow-hidden">
         <Image
           height={800}
           width={800}

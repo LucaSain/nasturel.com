@@ -2,8 +2,8 @@ import Image from "next/image";
 import * as Clouds from "./Cloud";
 export default function Background() {
   return (
-    <div className="w-screen h-screen absolute left-0 top-0 z-0">
-      <div className="absolute right-0 top-0 z-10 h-full w-full opacity-20">
+    <div className="w-screen h-screen absolute left-0 top-0 z-0 max-w-[100vw] overflow-hidden">
+      {/* <div className="absolute right-0 top-0 z-10 h-full w-full opacity-20">
         <Image
           alt="sunrays"
           height={800}
@@ -11,8 +11,8 @@ export default function Background() {
           src="sunrays.svg"
           className="h-full w-full object-cover"
         />
-      </div>
-      <div className="absolute right-0 top-0 z-10 h-full w-full  bg-gradient-to-b from-transparent to-base-100"></div>
+      </div> */}
+      <div className="absolute right-0 top-0 z-10 h-full w-full bg-gradient-to-b from-transparent to-base-100"></div>
       <Image
         alt="sun"
         height={400}

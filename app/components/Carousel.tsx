@@ -17,11 +17,11 @@ export default function Carousel() {
   ];
   const [currentItem, setCurrentItem] = useState<number>(1);
   return (
-    <div className="carousel relative w-full h-[500px] flex justify-center items-center ">
+    <div className="carousel relative w-screen h-[500px] sm:h-[700px] flex justify-center items-center ">
       <Suspense
         fallback={
           <div className="h-full w-full flex justify-center items-center bg-primary bg-opacity-45 rounded-xl">
-            <div className="  loading-spinner "></div>
+            <div className="loading-spinner "></div>
           </div>
         }
       >
@@ -30,14 +30,14 @@ export default function Carousel() {
           carouselItems.map((item, index) => (
             <div
               key={index}
-              className={`absolute max-w-[80%] aspect-square sm:max-w-xl h-full flex justify-center items-center ${
+              className={`absolute max-w-[80%] sm:max-w-[60%]  w-screen aspect-square h-full flex justify-center items-center ${
                 index === currentItem ? "block" : "hidden"
               }`}
             >
               {item.includes(".jpeg") ? (
                 <Image
-                  width={400}
-                  height={400}
+                  width={1000}
+                  height={1000}
                   alt={item}
                   src={item}
                   className=" shadow-xl transition-all h-full w-full rounded-xl object-cover"

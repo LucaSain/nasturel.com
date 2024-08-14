@@ -26,8 +26,8 @@ export default function Home() {
     </>
   );
   return (
-    <div className="z-0 overflow-hidden">
-      <div className="h-screen w-screen">
+    <div className="z-0 ">
+      <div className=" h-screen w-screen max-w-[100vw] overflow-hidden">
         <Background />
         <Hero />
         <div className=" hidden md:block absolute bottom-10 left-20">
