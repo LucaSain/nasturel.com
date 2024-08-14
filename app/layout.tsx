@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Suspense } from "react";
-import Footer from "./components/footer";
+import Footer from "./components/NewFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   title: "Festivalul Nasturel",
   description:
-    "Cel mai tare festival pentru copii din Romania! In curand la Sibiu!",
+    "Cel mai tare festival pentru copii din Romania! In curand la Sibiu !",
 };
 
 export default function RootLayout({
