@@ -9,7 +9,7 @@ export default function Footer() {
           activitati pentru ei!
         </p>
         <p>
-          Contact: <a href="tel:40764276889"> +40 (764) 276 889 </a>{" "}
+          Contact : <a href="tel:40764276889"> +40 (764) 276 889 </a>{" "}
         </p>
       </aside>
       <nav>
